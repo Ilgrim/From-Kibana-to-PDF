@@ -3,15 +3,15 @@ How to convert Kibana dashboard to PDF using wkhtmltopdf
 
 ## Requirements
 ```bash
-apt-get update
-apt-get install libxrender1 libxrender-dev libfontconfig1 libfontconfig1-dev
+$ apt-get update
+$ apt-get install libxrender1 libxrender-dev libfontconfig1 libfontconfig1-dev
 ```
 
 ## Download wkhtmltopdf
 ```bash
-cd /opt/
-wget "https://downloads.wkhtmltopdf.org/0.12/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz"
-tar xvfJ wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+$ cd /opt/
+$ wget "https://downloads.wkhtmltopdf.org/0.12/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz"
+$ tar xvfJ wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
 ```
 
 ## From Kibana
