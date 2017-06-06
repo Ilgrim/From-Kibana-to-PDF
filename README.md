@@ -37,8 +37,9 @@ In your clipboard you'll have the iframe syntax, something like this:
 ```
 <br>
 
-Now, we need to create an HTML page in which include the Kibana iframe, and then parse it with wkhtmltopdf. Is important to edit the iframe syntax including a static with, a static height and removing the iframe border. For example:
-`<iframe style="border:none; width:1200px; height:800px;" ...`. Go to your webserver root directory and create a `kibana.html` that contains:
+Now, we need to create an HTML page in which including the Kibana iframe and then parse it with wkhtmltopdf. Is important to edit the iframe syntax including a static with, a static height and removing the iframe border. For example:
+`<iframe style="border:none; width:1200px; height:800px;" ...`. Go to your web server root directory and create a `kibana.html` like this:
+
 ```bash
 $ cd /var/www/html
 $ nano -w kibana.html
@@ -59,6 +60,7 @@ $ nano -w kibana.html
 </body>
 </html>
 ```
+
 <br>
 
 ## Run wkhtmltopdf
@@ -72,4 +74,4 @@ Now you can download your PDF from `http://127.0.0.1/kibana_dashboard.pdf`
 <br>
 
 ## Hope this can help :bowtie:
-> theMiddle<br>https://secthemall.com
+> by theMiddle<br>https://secthemall.com<br>https://github.com/SECTHEMALL
