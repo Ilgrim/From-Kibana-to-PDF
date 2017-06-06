@@ -5,6 +5,16 @@ How to convert Kibana dashboard to PDF using **wkhtmltopdf**, tested on a Docker
 
 <br>
 
+## Table of contents
+- [Requirements](#requirements)
+- [Install wkhtmltopdf](#install-wkhtmltopdf)
+- [From Kibana](#from-kibana)
+- [To PDF](#to-pdf)
+- [Run wkhtmltopdf](#run-wkhtmltopdf)
+- [About](#hope-this-can-help-bowtie)
+
+<br>
+
 ## Requirements
 - A local **webserver** (`apt-get install nginx`)
 - **wkhtmltopdf** [https://wkhtmltopdf.org/](https://wkhtmltopdf.org/)
@@ -35,8 +45,10 @@ In your clipboard you'll have the iframe syntax, something like this:
 ```html
 <iframe src="https://10.19.19.1:5601/app/kibana#/dashboard/..." height="600" width="800"></iframe>
 ```
+
 <br>
 
+## To PDF
 Now, we need to create an HTML page in which including the Kibana iframe and then parse it with wkhtmltopdf. Is important to edit the iframe syntax including a static with, a static height and removing the iframe border. For example:
 `<iframe style="border:none; width:1200px; height:800px;" ...`. Go to your web server root directory and create a `kibana.html` like this:
 
