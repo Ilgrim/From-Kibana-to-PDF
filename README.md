@@ -78,7 +78,7 @@ $ nano -w kibana.html
 ## Run wkhtmltopdf
 ```bash
 $ cd /var/www/html
-$ /opt/wkhtmltox/bin/wkhtmltopdf -O Landscape --stop-slow-scripts --javascript-delay 10000 "http://127.0.0.1/kibana.html" ./kibana_dashboard.pdf
+$ /opt/wkhtmltox/bin/wkhtmltopdf -O Landscape --javascript-delay 10000 "http://127.0.0.1/kibana.html" ./kibana_dashboard.pdf
 ```
 
 Now you can download your PDF from `http://127.0.0.1/kibana_dashboard.pdf`
